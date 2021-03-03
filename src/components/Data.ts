@@ -17,7 +17,7 @@ const dataEmployee: Data[] = [
     { id: ++id, fullName: 'Шаров Мечеслав Андреевич', departmentID: 4},
     { id: ++id, fullName: 'Денисов Альберт Ефимович', departmentID: 6},
     { id: ++id, fullName: 'Меркушев Корнелий Святославович', departmentID: 4},
-    { id: ++id, fullName: 'Мартынов Вальтер Богуславович', departmentID: 8},
+    { id: ++id, fullName: 'Мартынов Вальтеер Богуславович', departmentID: 8},
     { id: ++id, fullName: 'Крюков Платон Эдуардович', departmentID: 3},
     { id: ++id, fullName: 'Елисеев Дмитрий Адольфович', departmentID: 1},
     { id: ++id, fullName: 'Суворов Степан Юрьевич', departmentID: 2},
