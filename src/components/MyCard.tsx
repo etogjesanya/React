@@ -61,7 +61,7 @@ export default class MyCard extends Component<IProps, IState> {
             {this.myStuff.description}
           </Typography>
           <Typography variant="body2" component="p">
-            Price: {this.myStuff.price ?? "-"}
+            Price: {this.myStuff.price ? this.myStuff.price: "-"}
           </Typography>
           <Typography variant="body2" component="p">
             You have clicked {this.state.clickCount} times

@@ -40,7 +40,7 @@ export default class MyCards extends Component<any, IState> {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ allStuff: allStuffNet });
-    }, 5000);
+    }, 1500);
   }
 
   deleteElement = (stuff: Stuff) => {
@@ -55,7 +55,7 @@ export default class MyCards extends Component<any, IState> {
     return (
       <>
         {this.state.allStuff.length > 0 ? (
-          <Grid container spacing={2}>
+          <Grid container spacing={2} style={{padding:"20px"}}>
             <Grid item xs={12}>
               <Grid container justify="center" spacing={1}>
                 {this.state.allStuff.map((item: Stuff) => {
@@ -71,7 +71,9 @@ export default class MyCards extends Component<any, IState> {
             </Grid>
           </Grid>
         ) : (
-          <img src={Preloader} />
+          <Grid container justify="center" spacing={1}>
+          <img src={Preloader} width="10%" height="10%"/>
+          </Grid>
         )}
       </>
     );
