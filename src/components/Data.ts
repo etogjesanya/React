@@ -29,5 +29,5 @@ const dataEmployee: Data[] = [
     { id: ++id, fullName: 'Рыбаков Августин Якунович', departmentID: 9},
   ];
 
-  // сделать метод выдачи данных без експорт
-  export default dataEmployee;
+  export default function GetData() {
+    return dataEmployee; }

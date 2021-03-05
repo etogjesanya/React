@@ -7,7 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import dataEmployee from './Data';
+import GetData from './Data';
 
 const useStyles = makeStyles({
   table: {
@@ -21,11 +21,9 @@ interface Data {
   departmentID: number;
 }
 
-const rows: Data[] = dataEmployee;
-
 export default function DenseTable() {
   const classes = useStyles();
-// вставить метод из файла дата сюда
+  var data = GetData();
   return (
     <TableContainer component={Paper}>
       <Table className={classes.table} size="small" aria-label="a dense table">
@@ -37,7 +35,7 @@ export default function DenseTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {data.map((row) => (
             <TableRow key={row.id}>
               <TableCell component="th" scope="row">
                 {row.id}
