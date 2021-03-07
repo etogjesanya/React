@@ -19,6 +19,7 @@ interface Data {
   id: number;
   fullName: string;
   departmentID: number;
+  balanceSum: number
 }
 
 export default function DenseTable() {
@@ -30,8 +31,9 @@ export default function DenseTable() {
         <TableHead>
           <TableRow>
             <TableCell>ID</TableCell>
-            <TableCell align="left">Full Name</TableCell>
-            <TableCell align="left">DepartmentID</TableCell>
+            <TableCell align="left">Фамилия Имя Отчество</TableCell>
+            <TableCell align="left">ID Отдела</TableCell>
+            <TableCell align="left">Остаток счёта</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -42,6 +44,7 @@ export default function DenseTable() {
               </TableCell>
               <TableCell align="left">{row.fullName}</TableCell>
               <TableCell align="left">{row.departmentID}</TableCell>
+              <TableCell align="left">{row.balanceSum}</TableCell>
             </TableRow>
           ))}
         </TableBody>
