@@ -19,12 +19,11 @@ interface Data {
   id: number;
   fullName: string;
   departmentID: number;
-  balanceSum: number
 }
 
 export default function DenseTable() {
   const classes = useStyles();
-  var data = GetData();
+  const data = GetData();
   return (
     <TableContainer component={Paper}>
       <Table className={classes.table} size="small" aria-label="a dense table">
@@ -33,7 +32,6 @@ export default function DenseTable() {
             <TableCell>ID</TableCell>
             <TableCell align="left">Фамилия Имя Отчество</TableCell>
             <TableCell align="left">ID Отдела</TableCell>
-            <TableCell align="left">Остаток счёта</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -44,7 +42,6 @@ export default function DenseTable() {
               </TableCell>
               <TableCell align="left">{row.fullName}</TableCell>
               <TableCell align="left">{row.departmentID}</TableCell>
-              <TableCell align="left">{row.balanceSum}</TableCell>
             </TableRow>
           ))}
         </TableBody>
