@@ -4,7 +4,7 @@ import GetData from './Data';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 70 },
-  { field: 'fullName', headerName: 'Full name', width: 200 },
+  { field: 'fullName', headerName: 'Full name', width: 300 },
   {
     field: 'departmentID',
     headerName: 'Department ID',
